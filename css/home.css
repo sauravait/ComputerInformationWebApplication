@@ -1,0 +1,184 @@
+/* Front home style sheet*/
+
+#delay_demo{
+  position:relative;
+  width:1200px;
+  height:500px;
+  margin:0 auto 100px;
+  transform:scale(0);
+  opacity:0;
+  padding:10px;
+}
+#addAndView,#editAndView 
+{
+    position:relative;
+    width:auto;
+    height:500px;
+    margin:0 auto 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: -605px;
+    opacity:0;
+    -webkit-transition: all 1s ease-in-out;
+    transform:scale(0);
+}
+
+body{
+  background: #E9E9E9;
+}
+
+#dd1, #dd2, #dd3, #dd4, #dd5, #dd6, #dd7, #dd8 {
+    width: 300px;
+    height: 160px;
+  
+    background-color:#444;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    position:absolute;
+    top:300px;
+    text-align:center;
+    padding-top:0px;
+    left:590px;
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+     
+    font-family: 'Poiret One',cursive,serif;
+    -webkit-transition: all 1s ease-in-out;
+
+    -webkit-transform: translate3d(0,0,0);
+}
+
+  
+  #dd1 {
+    -webkit-transition-delay: 0.1s;
+ }
+  #dd2 {
+    -webkit-transition-delay: 0.2s;
+ }
+  #dd3 {
+    -webkit-transition-delay: 0.3s;
+  }
+  #dd4 {
+    -webkit-transition-delay: 0.4s;
+ }
+  #dd5 {
+    -webkit-transition-delay: 0.5s;
+ }
+  
+ 
+/* Overline From Center */
+.hvr-overline-from-center {
+  
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-overline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  top: 0;
+    background: #1AF50B;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+ #a{
+  width:150px;
+  height:150px;
+  -webkit-border-radius:10px;
+  background-color: green;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  
+ 
+
+  cursor: pointer;
+  -webkit-transition: all 1s ease-in-out;
+
+  -webkit-transform: translate3d(0,0,0);
+ }
+
+input[type="text"] {
+border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+border-top: 0px;
+border-right: 0px;
+border-left: 0px;
+height: 48px;
+width: 240PX;
+max-width: 400px;
+}
+
+header,footer{
+
+  background-color: #3299BB;
+  height: auto;
+  width: auto;
+font-family: 'Poiret One',cursive,serif;
+font-size: 35px;
+  font-weight: bold;
+  color: white;
+text-align: left;
+padding-left: 20px;
+
+
+}
+
+.fa-stack-1x{
+background-color: #3299BB;
+
+}
+
+span
+{
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+
+}
+span:hover
+{ 
+  transform: scale(1.2); 
+}
+button {
+    color: #000000;
+    border: #E9E9E9 solid 1px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-left: 800px;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+a{
+  font-size: 15px;
+  font-family: 'Poiret One',cursive,serif;
+}

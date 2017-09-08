@@ -1,0 +1,115 @@
+﻿<html>
+<head>
+<title>PC Information Web Application</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <script src="js/lib/jquery-1.11.1.min.js" type="text/javascript"></script>
+  <script src="js/lib/jquery.fancy-textbox.js" type="text/javascript"></script>
+  <script src="js/homeScript.js" type="text/javascript" ></script>
+  
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/fancy-textbox.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+
+<body onload="move()">
+  
+ <header>
+<span title="Home" onclick="move()">PC Information</span>
+&nbsp;
+<span title="Departments" class="fa-stack fa-x" onclick="departments()">
+  <i class="fa fa-circle fa-stack-1x icon-background"></i>
+  <i class="fa fa-windows fa-stack-1x" ></i>
+</span>
+     
+   <button class="button" onclick="exportData()">Export Data</button>
+            <a id="results"><i class="fa fa-download" ></i></a>
+ </header>
+
+<div id="home">
+<div id="delay_demo" class="shadow hover">
+  
+  <div id="dd1" onclick="slide('valuation')" class="hvr-overline-from-center">Valuation</div>
+  <div id="dd2" onclick="slide('backUp')" class="hvr-overline-from-center"><label>Back Up</label></div>
+  <div id="dd3" onclick="slide('callCenter')" class="hvr-overline-from-center"><label>Call Center</label></div>
+  <div id="dd4" onclick="slide('shadow')" class="hvr-overline-from-center"><label>Shadow</label></div>
+  <div id="dd5" onclick="slide('609')" class="hvr-overline-from-center"><label>609</label></div>
+   
+</div>
+</div>
+
+<div id="addAndView">
+<form id="frmItem" >
+        <ul >
+            <h1>Computer Information</h1>
+          <hr style="width:400px;margin-left:0px;">
+           <input type="text" required data-animation="rotate-3d" data-label="Computer Name" class="fancy-textbox masked" style="text-indent: 0px;"  id="txtComputerName"/>
+           <input type="text" required data-animation="rotate-3d"  data-label="User Name" class="fancy-textbox masked" style="text-indent: 0px;" id="txtUserName"/>
+            <input type="text" required data-animation="rotate-3d"  data-label="Password"  class="fancy-textbox masked" style="text-indent: 0px;" id="txtPassword"/> 
+            <input type="text" required data-animation="rotate-3d"  data-label="Ip Address" class="fancy-textbox masked" style="text-indent: 0px;"  id="txtIpAddress"/> 
+            <input type="text" required data-animation="rotate-3d"  data-label="Machine Type" class="fancy-textbox masked" style="text-indent: 0px;" list="machineTypes"  id="txtMachineType"/> 
+            <datalist id="machineTypes" > 
+                  <option value="Desktop">
+                  <option value="Laptop">
+            </datalist>
+            <input type="text" required data-animation="rotate-3d" data-label="GateWay"  class="fancy-textbox masked" style="text-indent: 0px;"  id="txtGateway"/> 
+           <input type="text" required data-animation="rotate-3d"  data-label="MacAddress"  class="fancy-textbox masked" style="text-indent: 0px;"  id="txtMacAddress"/> 
+           <input type="text" required data-animation="rotate-3d"  data-label="Department"  class="fancy-textbox masked" style="text-indent: 0px;"  list="departments" id="txtDepartment"/> 
+            <datalist id="departments" > 
+                  <option value="Valuation">
+                  <option value="BackUp">
+                  <option value="CallCenter">
+                  <option value="Shadow">
+                  <option value="609">
+            </datalist>
+             <input type="text" required  data-animation="rotate-3d"   data-label="Sub Department"  class="fancy-textbox masked" style="text-indent: 0px;"  list="subDepartments" id="txtSubDepartment"/> 
+            <datalist id="subDepartments"> 
+                  <option value="Reporting">
+                  <option value="Account">
+                  <option value="IT">
+                  <option value="Supervisor">
+                  <option value="Coordinator">
+            </datalist>
+           
+            <br/>
+            <br/>
+           
+            <button title="Save Computer Information" class="button" value="Save" id="btnSave"/>Save</button>
+            
+        </ul>
+       
+    </form>
+    </br>
+    <div >
+        <div id="tblList">
+        </div>
+    </div>
+</div>
+<div id="editAndView">
+    <div >
+        <div id="departmentComputers">
+        </div>
+    </div>
+</div>
+
+<footer>
+<span onclick="location.href = 'https://www.twitter.com/sauravait';" title="Follow Saurav Tyagi" class="fa-stack fa-x">
+  <i class="fa fa-circle fa-stack-1x icon-background"></i>
+  <i class="fa fa-twitter fa-stack-1x"></i>
+</span>
+<span onclick="location.href = 'https://www.facebook.com/sauravait';" title="Follow Saurav Tyagi" class="fa-stack fa-x">
+  <i class="fa fa-circle fa-stack-1x icon-background"></i>
+  <i class="fa fa-facebook fa-stack-1x"></i>
+</span>
+<span onclick="location.href = 'https://www.linkedin.com/sauravait';" title="Follow Saurav Tyagi" class="fa-stack fa-x">
+  <i class="fa fa-circle fa-stack-1x icon-background"></i>
+  <i class="fa fa-linkedin fa-stack-1x"></i>
+</span>
+
+</footer>
+
+</body>
+</html>
+
+
+

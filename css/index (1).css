@@ -1,0 +1,142 @@
+.icon-background {
+    color: #c0ffc0;
+}
+
+.datagrid table { border-collapse: collapse; text-align: left; width: 100%; } .datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #2BA3D4; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }.datagrid table td, .datagrid table th { padding: 3px 10px; }.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #2BA3D4), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #2BA3D4 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2BA3D4', endColorstr='#00557F');background-color:#2BA3D4; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #0070A8; } .datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #00557F; border-left: 1px solid #E1EEF4;font-size: 12px;font-weight: normal; }.datagrid table tbody .alt td { background: #E1EEf4; color: #00557F; }.datagrid table tbody td:first-child { border-left: none; }.datagrid table tbody tr:last-child td { border-bottom: none; }.datagrid table tfoot td div { border-top: 1px solid #2BA3D4;background: #E1EEf4;} .datagrid table tfoot td { padding: 0; font-size: 12px } .datagrid table tfoot td div{ padding: 2px; }.datagrid table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; }.datagrid table tfoot  li { display: inline; }.datagrid table tfoot li a { text-decoration: none; display: inline-block;  padding: 2px 8px; margin: 1px;color: #FFFFFF;border: 1px solid #2BA3D4;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #2BA3D4), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #2BA3D4 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2BA3D4', endColorstr='#00557F');background-color:#2BA3D4; }.datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover { text-decoration: none;border-color: #00557F; color: #FFFFFF; background: none; background-color:#2BA3D4;}div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }
+
+
+form{
+ background-color: #444;
+  border-radius: 5px;
+
+}
+
+
+/* ### ### ### 01 */
+button {
+    color: #000000;
+    border: #000000 solid 1px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#btnSave{
+    margin-left: 800px;
+    width: 150px;   
+    margin-top: -10px;
+    font-size: 15px;
+    font-family: 'Poiret One',cursive,serif;
+}
+#btnEdit{
+    margin-left: 190px;
+}
+
+h1{
+    color: white;
+      font-weight: bold;
+     font-family: 'Poiret One',cursive,serif;
+}
+ul{
+    list-style-type:square;
+}
+li{
+   font-weight: bold;
+   font-size: 13px;
+   font-family: 'Poiret One',cursive,serif;   
+}
+
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 450px;
+  height: 281px;
+  z-index: 1;
+
+}
+
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 2.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}
+
+.flip3D
+         {
+        width:250px;height:200px; margin:13.1px; float:left;
+        
+        
+        }
+.flip3D > .front {
+position:absolute;
+transform: perspective(600px) rotateY( 0deg );
+-webkit-transform:perspective(600px) rotateY( 0deg );
+background: rgb(233, 233, 233);
+
+border-radius:7px;
+width:250px;height:200px;
+backface-visibility:hidden;
+transition: -webkit-transform 1s linear 0s;
+transition: transform 1s linear 0s;
+}
+
+.flip3D > .back {
+position:absolute;
+transform: perspective(600px) rotateY( 180deg );
+-webkit-transform: perspective(600px) rotateY( 180deg );
+background-color:#82cff0;
+border-radius:7px;
+width:250px;height:200px;
+backface-visibility:hidden;
+text-align:left;
+color:black;
+font-size:15px;
+transition: -webkit-transform 1s linear 0s;
+transition: transform 1s linear 0s;
+}
+.flip3D:hover > .front {
+transform: perspective(600px) rotateY( -180deg );
+-webkit-transform: perspective(600px) rotateY( -180deg );
+}
+
+
+.flip3D:hover > .back {
+transform: perspective(600px) rotateY( 0deg );
+-webkit-transform: perspective(600px) rotateY( 0deg );
+}
+.fa-desktop:before {
+    margin-left: 75px;
+             
+}
+.fa-laptop:before {
+    margin-left: 75px;
+             
+}
